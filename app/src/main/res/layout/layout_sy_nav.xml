@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shouye_rc"></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_below="@+id/shouye_rc"
+        android:layout_width="match_parent"
+        android:id="@+id/kuaibao"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sou_bao"/>
+        <com.rookie.imitationjd.view.customview.NoticeView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/notice_view"
+            >
+
+        </com.rookie.imitationjd.view.customview.NoticeView>
+    </RelativeLayout>
+
+
+</LinearLayout>

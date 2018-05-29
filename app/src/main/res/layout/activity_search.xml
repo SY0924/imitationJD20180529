@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rookie.imitationjd.view.activities.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin5"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/scan"
+            android:layout_width="@dimen/mysearchview_height"
+            android:layout_height="@dimen/mysearchview_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/search_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/back"
+                />
+
+        </LinearLayout>
+
+        <com.rookie.imitationjd.view.customview.MySearchView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/search_edit"
+            android:layout_height="@dimen/mysearchview_height">
+
+        </com.rookie.imitationjd.view.customview.MySearchView>
+
+        <LinearLayout
+            android:layout_width="@dimen/mysearchview_height"
+            android:layout_height="@dimen/mysearchview_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="搜索"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热搜"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                />
+            <com.fynn.fluidlayout.FluidLayout
+                android:id="@+id/fluid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+            </com.fynn.fluidlayout.FluidLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:text="历史搜索"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="-5dp"
+                android:background="#e1e1ef"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_list">
+
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清 空 历 史 记 录"
+                android:textSize="18sp"
+                android:id="@+id/search_clear"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

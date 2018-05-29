@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/update_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#999"
+            android:hint="请输入修改的昵称" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/update_cancel"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/update_success"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

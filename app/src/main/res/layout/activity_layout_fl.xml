@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin5"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/scan"
+            android:layout_width="@dimen/mysearchview_height"
+            android:layout_height="@dimen/mysearchview_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/leftjiantou"
+                />
+
+        </LinearLayout>
+
+        <com.rookie.imitationjd.view.customview.MySearchView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/mysearchview_height">
+
+        </com.rookie.imitationjd.view.customview.MySearchView>
+
+        <LinearLayout
+            android:layout_width="@dimen/mysearchview_height"
+            android:layout_height="@dimen/mysearchview_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/search_height"
+                android:layout_height="@dimen/search_height"
+                android:src="@drawable/msg_hei"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="消息"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/fl_left"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/timg"
+                />
+            <ListView
+                android:id="@+id/fl_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
